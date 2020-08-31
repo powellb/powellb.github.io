@@ -1,0 +1,198 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background: #efefef;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #a9a9a9;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+    font-size: 12px;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #a0a0a0;
+}
+
+.active {
+    background-color: #caebf2;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #054629;
+    display: flex;
+    align-items: center;
+}
+.header a {
+    margin: 20px 20% 20px 5%;
+    float: left;
+}
+.header img {
+    /* margin: 20px 20% 20px 5%; */
+    float: left;
+}
+.header p {
+    margin: 0 40px 0 40px;
+    align: center;
+    /* font-family:  'Lora', serif; */
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.content {
+    overflow: hidden;
+    background-color: #eee;
+}
+
+.intro {
+    width: 70%;
+    margin: 10px auto;
+}
+
+.intro img {
+    margin: 20px auto;
+    float: right;
+    box-shadow: 0 0 8px;
+}
+
+.intro h3 {
+    font-size: 36px;
+    float: left;
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+}
+.intro p{
+    float: left;
+    margin: 30px auto;
+    display: block;
+    width: 60%;
+}
+
+.parallax {
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    vertical-align: baseline;
+    text-align: left;
+    padding: 8px;
+}
+
+div.tablelist table {
+    margin: 10px auto;
+    width: 80%;
+}
+
+div.tablelist th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+div.tablelist tr:hover {
+    background-color:#f5f5f5;
+}
+
+div.transbox {
+    width: 90%;
+    max-width: 600px;
+    /* height: 80%; */
+    margin: 40px 20px 20px 20px;
+    background-color: rgba(255,255,255,0.1);
+    /* opacity: 0.5; */
+}
+
+div.transbox h2 {
+    margin: 5%;
+    font-weight: bold;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    font-size: 16px;
+    align: justify;
+    color: #ffffff;
+}
+
+
+div.gallery {
+    border: 1px solid #efefef;
+    /* align: center; */
+    float: center;
+}
+
+div.gallery:hover {
+    border: 1px solid #e0e0e0;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 1px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.responsive {
+    padding: 0 5%;
+    float: left;
+    width: 14.9%;
+    max-width: 200px;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

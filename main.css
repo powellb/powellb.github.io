@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    min-height: 100%;
     margin: 0;
     background: #efefef;
     font-family: 'Montserrat', sans-serif;
@@ -175,6 +176,13 @@ div.desc {
     max-width: 200px;
 }
 
+.copyright {
+    /* width: 90%; */
+    /* /\* margin: 20px auto; *\/ */
+    /* font-size: 12px; */
+    /* float: bottom; */
+}
+
 @media only screen and (min-height: 700px) {
     div.transbox h2 {
         font-size: 24px;
@@ -194,7 +202,7 @@ div.desc {
         font-size: 2.25vmin;
     }
     .intro p {
-        font-size: 2.25vmin;
+        font-size: 3vmin;
         width: 100%;
     }
 }

@@ -100,6 +100,7 @@ li a:hover:not(.active) {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 table {
@@ -128,23 +129,19 @@ div.tablelist tr:hover {
 div.transbox {
     width: 90%;
     max-width: 600px;
-    /* height: 80%; */
     margin: 40px 20px 20px 20px;
     background-color: rgba(255,255,255,0.1);
-    /* opacity: 0.5; */
 }
 
 div.transbox h2 {
     margin: 5%;
     font-weight: bold;
-    font-size: 36px;
     color: #ffffff;
 }
 
 div.transbox p {
     margin: 5%;
     font-weight: bold;
-    font-size: 16px;
     align: justify;
     color: #ffffff;
 }
@@ -178,14 +175,36 @@ div.desc {
     max-width: 200px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (min-height: 700px) {
+    div.transbox h2 {
+        font-size: 24px;
+    }
+    div.transbox p {
+        font-size: 16px;
+    }
+    .intro p {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-height: 699px) {
+    div.transbox h2 {
+        font-size: 18px;
+    }
+    div.transbox p {
+        font-size: 12px;
+    }
+    .intro p {
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 701px) {
     .responsive {
         width: 49.99999%;
         margin: 6px 0;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     .responsive {
         width: 100%;
     }

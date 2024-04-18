@@ -149,13 +149,13 @@ div.transbox p {
 
 
 div.gallery {
-    border: 1px solid #efefef;
+    /* border: 1px solid #000000; */
     /* align: center; */
     float: center;
 }
 
 div.gallery:hover {
-    border: 1px solid #e0e0e0;
+    /* border: 1px solid #e0e0e0; */
 }
 
 div.gallery img {
@@ -169,11 +169,24 @@ div.desc {
     font-size: 14px;
 }
 
+.grid {
+    /* width: 80%; */
+    align: center;
+    display: grid;
+    grid-gap: 2%;
+    margin: 10px;
+}
+
+.auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
+}
+
 .responsive {
-    padding: 0 5%;
-    float: left;
-    width: 14.9%;
-    max-width: 200px;
+    place-self: center;
+    /* padding: 0 3%; */
+    /* float: left; */
+    /* width: 14.9%; */
+    /* max-width: 200px; */
 }
 
 .copyright {
